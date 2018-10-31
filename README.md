@@ -2,25 +2,36 @@
 Git 常用操作及原理
 
 1、初始化本地git
+
   git init
 
 2、配置用户名
+
   git config --global user.name "Jerry"
 
 3、配置邮箱
+
   git config --global user.email "lhp3851@163.com"
 
-4、git status 查看仓库状态
-  支持中文文件名：git config --global core.quotepath false
+4、查看仓库状态
+
+  git status
+
+  Tips：支持中文文件名
+
+    git config --global core.quotepath false
 
 5、提交本地仓库
+
   git add .
   git commit -m"【Git】[Git 常用操作及原理]"
 
 6、关联远程仓库
+
   git remote add origin git@github.com:lhp3851/Git.git
 
 7、保持Github 同步
+
   git pull
 
   Tips 1：
@@ -41,6 +52,7 @@ Git 常用操作及原理
     解决方式：git pull --allow-unrelated-histories
 
 8、推送到远程仓库
+
   git push -u origin master
 
   Tips：添加公钥，增加写权限
