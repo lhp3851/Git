@@ -90,6 +90,10 @@ Tips：支持中文文件名
 
 >git branch -d <branchName>
 
+1.6暂存/解除暂存分支
+>git stash
+>git stash apply
+
 2、远程
 
 2.1 查看远程分支信息
@@ -256,6 +260,9 @@ patch的命名是随意的，不加其他参数时作用是当我们希望将我
   9.2 git pull
 
   >相当于 git fetch和git merge
+  
+  9.3 git cherry-pick commitid
+  >提取某一次提交的变更，应用在其他分支当中
 
 
 10、推送本地提交到远程仓库
